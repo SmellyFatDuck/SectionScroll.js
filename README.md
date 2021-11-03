@@ -17,5 +17,9 @@ The function MUST be called by an event, I recommend load and resize (as resizin
   window.onresize = SectionScroll("article", "section");
 </script>
 ```
+
+## Example
+See working example on <a href="https://jsfiddle.net/daddymicael/aoh5jpf9/">JSFiddle</a>
+
 ## Licence
 <img src="https://img.shields.io/apm/l/vim-mode">
