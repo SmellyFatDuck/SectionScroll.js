@@ -122,7 +122,7 @@ function AlterScroll(details) {
     scrollPos = position <= 0 ? 0 : position;
 }
     
-function ScrollSection(a, b) {
+function SectionScroll(a, b) {
 	Reset();
   
 	container = document.querySelectorAll(a);
