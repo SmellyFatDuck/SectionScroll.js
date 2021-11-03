@@ -111,8 +111,6 @@ function AlterScroll(details) {
   
  	scrollDown = position > scrollPos ? true : false;
   
-    document.getElementById("top").innerHTML = position;
-  
     if (position > scrollTrigger && scrollDown) {
         document.removeEventListener("scroll", ScrollListening);
         ScrollToNext();
@@ -138,6 +136,3 @@ function ScrollSection(a, b) {
   
     SetScrollListener();
 }
-
-window.onload = ScrollSection("article", "section");
-window.resize = ScrollSection("article", "section");
