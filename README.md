@@ -7,9 +7,13 @@ This plugin allows you to use any number of containers and, obviously, sections.
 
 Simply enter the selector for your container, the selector for your sections, and the scroll animation duration then you're done!
 
+## Notes
+
+This plugin only supports layouts which consist of only the container and child sections. Any other layouts which have elements placed above or below the containers will not be accessible to the user.
+
 ## Usage
 
-### v2.0.1
+### v2.0.2
 SectionScroll(**container**, **children**, **scroll duration**)<br>
 <i>Note: jQuery migration may be required, as seen in the working example.</i>
 ```html
@@ -38,7 +42,7 @@ v1.0.0 - <a href="https://jsfiddle.net/daddymicael/aoh5jpf9/">JSFiddle</a>
 
 
 ## Current Bugs
-<b>MAJOR</b>: When there is an offset at the top of the page, the script will stop working completely, but only once you scroll back up to the top as it will operate fine upon load, regardless of offset.
+None to report.
 
 ## Licence
 <img src="https://img.shields.io/apm/l/vim-mode"> <img src="https://img.shields.io/github/v/release/SmellyFatDuck/SectionScroll.js"> <img src="https://img.shields.io/github/downloads/SmellyFatDuck/SectionScroll.js/total">
