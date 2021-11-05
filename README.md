@@ -1,11 +1,15 @@
 # SectionScroll.js
 <b>ScrollSection.js</b> is a very simple plugin which enables you to scroll by sections.
 
-The main difference about this plugin to other scroll-by-section plugins is that it doesn't manipulate anything but the scroll.
+### Purpose
+The main difference of this plugin compared to other scroll-by-section plugins is that it doesn't manipulate anything but the scroll and it supports any element height.
 
-This plugin allows you to use any number of containers and, obviously, sections.
-
-Simply enter the selector for your container, the selector for your sections, and the scroll animation duration then you're done!
+## Features
+<ul>
+  <li>Any number of containers.</li>
+  <li>Any number of child sections.</li>
+  <li>Infinite scrolling - <i>if there are offsets placed both on top of first container and bottom of last container, or if your browser supports scrolling above and below webpage contents.</i></li>
+</ul>
 
 ## Notes
 
@@ -25,7 +29,7 @@ SectionScroll(**container**, **children**, **scroll duration**)<br>
 </script>
 ```
 
-### v1.0.0
+### v1.0.0 (DOM)
 SectionScroll(**container**, **children**)
 ```html
 <script type="text/javascript" src="SectionScroll.js"></script>
@@ -37,7 +41,7 @@ SectionScroll(**container**, **children**)
 
 ## Examples
 See working examples:<br>
-v2.0.0 - <a href="https://jsfiddle.net/SmellyFatDuck/4h3gqptj/167/">JSFiddle</a><br>
+v2.0.2 - <a href="https://jsfiddle.net/SmellyFatDuck/4h3gqptj/167/">JSFiddle</a><br>
 v1.0.0 - <a href="https://jsfiddle.net/daddymicael/aoh5jpf9/">JSFiddle</a>
 
 
