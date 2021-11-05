@@ -59,7 +59,7 @@
 
         if (_activeChild == 0) {
             if (_activeContainer == 0)
-                _activeContainer = _container.length - 1;
+                _activeContainer = $(_container).length - 1;
             else
                 _activeContainer--;
             
