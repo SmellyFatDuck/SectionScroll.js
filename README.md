@@ -8,18 +8,30 @@ This plugin allows you to use any number of containers and, obviously, sections.
 Simply enter the selector for your container and the selector for your sections then you're done!
 
 ## Usage
-The function MUST be called by an event, I recommend load and resize (as resizing can throw off the calculations).
 
+### v2.0.0
 ```html
-<script type="text/javascript" src="ScrollSection.js"></script>
+<script type="text/javascript" src="SectionScroll-2.0.0.js"></script>
+<script type="text/javascript">
+  $(document).ready(() => {
+	  SectionScroll("article", "section", 500);
+  });
+</script>
+```
+
+### v1.0.0
+```html
+<script type="text/javascript" src="SectionScroll.js"></script>
 <script type="text/javascript">
   window.load = SectionScroll("article", "section");
   window.onresize = SectionScroll("article", "section");
 </script>
 ```
 
-## Example
-See working example on <a href="https://jsfiddle.net/daddymicael/aoh5jpf9/">JSFiddle</a>
+## Examples
+See working examples:
+v2.0.0 - <a href="https://jsfiddle.net/SmellyFatDuck/4h3gqptj/167/">JSFiddle</a>
+v1.0.0 - <a href="https://jsfiddle.net/daddymicael/aoh5jpf9/">JSFiddle</a>
 
 ## Licence
-<img src="https://img.shields.io/apm/l/vim-mode">
+<img src="https://img.shields.io/apm/l/vim-mode"> <img src="https://img.shields.io/github/v/release/SmellyFatDuck/SectionScroll.js"> <img src="https://img.shields.io/github/downloads/SmellyFatDuck/SectionScroll.js/total">
