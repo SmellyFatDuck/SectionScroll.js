@@ -29,7 +29,7 @@ Simply enter the selector for your container and the selector for your sections 
 ```
 
 ## Examples
-See working examples:
+See working examples:<br>
 v2.0.0 - <a href="https://jsfiddle.net/SmellyFatDuck/4h3gqptj/167/">JSFiddle</a><br>
 v1.0.0 - <a href="https://jsfiddle.net/daddymicael/aoh5jpf9/">JSFiddle</a>
 
