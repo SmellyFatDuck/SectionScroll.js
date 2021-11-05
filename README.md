@@ -5,7 +5,7 @@ The main difference about this plugin to other scroll-by-section plugins is that
 
 This plugin allows you to use any number of containers and, obviously, sections.
 
-Simply enter the selector for your container and the selector for your sections then you're done!
+Simply enter the selector for your container, the selector for your sections, and the scroll animation duration then you're done!
 
 ## Usage
 
