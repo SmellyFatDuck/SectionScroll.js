@@ -10,7 +10,8 @@ Simply enter the selector for your container and the selector for your sections 
 ## Usage
 
 ### v2.0.0
-SectionScroll(**container**, **children**, **scroll duration**)
+SectionScroll(**container**, **children**, **scroll duration**)<br>
+<i>Note: jQuery migration may be required, as seen in the working example.</i>
 ```html
 <script type="text/javascript" src="SectionScroll-2.0.0.js"></script>
 <script type="text/javascript">
