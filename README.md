@@ -10,16 +10,18 @@ Simply enter the selector for your container and the selector for your sections 
 ## Usage
 
 ### v2.0.0
+SectionScroll(**container**, **children**, **scroll duration**)
 ```html
 <script type="text/javascript" src="SectionScroll-2.0.0.js"></script>
 <script type="text/javascript">
   $(document).ready(() => {
-	  SectionScroll("article", "section", 500);
+    SectionScroll("article", "section", 500);
   });
 </script>
 ```
 
 ### v1.0.0
+SectionScroll(**container**, **children**)
 ```html
 <script type="text/javascript" src="SectionScroll.js"></script>
 <script type="text/javascript">
