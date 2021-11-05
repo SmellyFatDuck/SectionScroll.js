@@ -13,14 +13,16 @@
     DetectOnScreen = () => {
         $(_container).each((i, e) => {
         		var $this = $(e);
-            if (_position >= $this.offset().top && _position <= ($this.offset().top + $this.outerHeight())) {
+            if (_position >= $this.offset().top && _position <= ($this.offset().top + $this.outerHeight()))
                 _activeContainer = i;
-            }
         }).children(_children).each((i, c) => {
         		var $that = $(c);
             if (_position >= $that.offset().top && _position <= ($that.offset().top + $that.outerHeight()))
             		_activeChild = i;
         });
+
+        _activeContainer = typeof _activeContainer === "undefined" ? 0 : _activeContainer;
+		_activeChild = typeof _activeChild === "undefined" ? 0 : _activeChild;
     }
 
     Scroll = (top) =>  $('html, body').animate({ scrollTop: top }, _duration).promise().done(SetScrollListener);
@@ -73,7 +75,7 @@
         let active,
             scrollTrigger;
 
-        active = $(_container).eq(_activeContainer).children(_children)[_activeChild];
+        active = $($(_container)[_activeContainer]).children(_children)[_activeChild];
         scrollTrigger = ($(active).offset().top + $(active).outerHeight()) - _screen;
 
         _scrollDown = _position > _lastScroll ? true : false;
@@ -90,12 +92,17 @@
 
     SetScrollListener = () => $(document).on("scroll", ScrollListening);
 
-    $(window).on("load resize", () => {
-        _screen = $(this).height();
+    WindowListening = () => {
+		_screen = $(this).height();
         _position = $(document).scrollTop();
         _lastScroll = _position;
         _scrollDown = false;
-    });
+	}
+	
+	SetWindowListener = () => {
+		WindowListening();
+		$(window).on("ready resize", WindowListening);
+	}
 
     $(window).on("scroll", () => _position = $(document).scrollTop());
 
@@ -104,7 +111,7 @@
         _children = child;
         _duration = duration;
     
-        DetectOnScreen();
+        $(SetWindowListener()).promise().done(DetectOnScreen);
         SetScrollListener();
     }
  
