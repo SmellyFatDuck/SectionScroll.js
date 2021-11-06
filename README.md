@@ -9,6 +9,8 @@ The main difference of this plugin compared to other scroll-by-section plugins i
   <li>Any number of containers.</li>
   <li>Any number of child sections.</li>
   <li>Infinite scrolling - <i>if there are offsets placed both on top of first container and bottom of last container, or if your browser supports scrolling above and below webpage contents.</i></li>
+  <li>Mobile touch</li>
+  <li>Key press scrolling - <i>UP, DOWN, LEFT, RIGHT (vertical movement only)</i></li>
 </ul>
 
 ## Notes
@@ -17,8 +19,9 @@ This plugin only supports layouts which consist of only the container and child 
 
 ## Usage
 
-### v2.0.2
-SectionScroll(**container**, **children**, **scroll duration**)<br>
+### v2.1.0
+SectionScroll(**container**, **children**, _scroll duration_)<br>
+<i>Scroll duration is optional, default 500(ms).</i><br><br>
 <i>Note: jQuery migration may be required, as seen in the working example.</i>
 ```html
 <script type="text/javascript" src="SectionScroll-2.0.0.js"></script>
@@ -41,7 +44,7 @@ SectionScroll(**container**, **children**)
 
 ## Examples
 See working examples:<br>
-v2.0.2 - <a href="https://jsfiddle.net/SmellyFatDuck/4h3gqptj/167/">JSFiddle</a><br>
+v2.1.0 - <a href="https://jsfiddle.net/SmellyFatDuck/4h3gqptj/167/">JSFiddle</a><br>
 v1.0.0 - <a href="https://jsfiddle.net/daddymicael/aoh5jpf9/">JSFiddle</a>
 
 
