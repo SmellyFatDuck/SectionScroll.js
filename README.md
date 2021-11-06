@@ -52,4 +52,4 @@ v1.0.0 - <a href="https://jsfiddle.net/daddymicael/aoh5jpf9/">JSFiddle</a>
 <b>MAJOR</b> - If there is an offset for the infinite scrolling, the page will scroll to the bottom from the top when scrolling down, and vica versa.
 
 ## Licence
-<img src="https://img.shields.io/apm/l/vim-mode"> <img src="https://img.shields.io/github/v/release/SmellyFatDuck/SectionScroll.js"> <img src="https://img.shields.io/github/downloads/SmellyFatDuck/SectionScroll.js/total">
+<img src="https://img.shields.io/apm/l/vim-mode">  <img src="https://img.shields.io/github/downloads/SmellyFatDuck/SectionScroll.js/total">
